@@ -1,13 +1,18 @@
-<header class="navbar navbar-expand-md bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
+<header class="navbar navbar-expand-lg bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
     <nav class="container-fluid bd-gutter" aria-label="Main navigation">
         <div>
-            <span class="mx-1 text-white">#YoProgramo</span>
+            <a routerLink="/">
+                <button class="btn-outline-light btn" type="button">Login</button>
+            </a>
         </div>
-        <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas"
+        <div class="me-5 pe-5 d-none d-lg-flex">
+            <span class="text-white">#YoProgramo</span>
+        </div>
+        <button class="navbar-toggler d-flex d-lg-none" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation" id="openbdNavbar">
             <fa-icon class="text-white" aria-hidden="true" [icon]="faBars"></fa-icon>
         </button>
-        <div class="offcanvas-md offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel"
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel"
             data-bs-scroll="true">
             <div class="offcanvas-header justify-content-end">
                 <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close"
@@ -33,7 +38,7 @@
                     </ul>
                 </div>
                 <hr>
-                <div class="vr d-none d-md-flex"></div>
+                <div class="vr d-none d-lg-flex"></div>
                 <div class="container text-center">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
@@ -46,6 +51,12 @@
                             <a class="nav-link active" routerLink="/">
                                 <fa-icon [icon]="faGithub"></fa-icon>
                                 <span class="ms-2">GitHub</span>
+                            </a>
+                        </li>
+                        <div class="vr d-none d-lg-flex"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">
+                                <img class="img-fluid" style="height: 20px;" src="../../../assets/imgs/Logo-arg.png">
                             </a>
                         </li>
                     </ul>

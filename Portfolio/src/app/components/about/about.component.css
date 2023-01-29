@@ -1,0 +1,45 @@
+#background{
+    background-image: url(../../../assets/imgs/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 92%;
+}
+
+main{
+    overflow: hidden;
+}
+
+h1,h5,span{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+
+hr{
+    animation-duration: 8s;
+    animation-name: display;
+}
+
+@keyframes display {
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
