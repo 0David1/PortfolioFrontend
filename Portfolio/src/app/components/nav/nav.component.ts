@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-nav',
@@ -8,6 +10,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent {
-  faLinkedin = faLinkedin;
   faBars = faBars;
+  faTimes = faTimes;
+  faLinkedin = faLinkedin;
+  faGithub = faGithub;
 }

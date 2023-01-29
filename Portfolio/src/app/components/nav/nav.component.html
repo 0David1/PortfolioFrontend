@@ -1,22 +1,56 @@
-<div data-bs-theme="dark" class="container-fluid bg-body text-body">
-    <nav class="navbar navbar-expand-md">
-            <fa-icon [icon]="faLinkedin"></fa-icon>
-            <span>#YoProgramo</span>
-            <div class="justify-content-end collapse navbar-collapse">
-                <ul class="navbar-nav gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" routerLink="/">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" routerLink="/">Proyects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" routerLink="/">Skills</a>
-                    </li>
-                </ul>
+<header class="navbar navbar-expand-md bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
+    <nav class="container-fluid bd-gutter" aria-label="Main navigation">
+        <div>
+            <span class="mx-1 text-white">#YoProgramo</span>
+        </div>
+        <button class="navbar-toggler d-flex d-md-none" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation" id="openbdNavbar">
+            <fa-icon class="text-white" aria-hidden="true" [icon]="faBars"></fa-icon>
+        </button>
+        <div class="offcanvas-md offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel"
+            data-bs-scroll="true">
+            <div class="offcanvas-header justify-content-end">
+                <button class="btn-close btn-close-white" type="button" data-bs-dismiss="offcanvas" aria-label="Close"
+                    data-bs-target="#bdNavbar">
+                </button>
             </div>
-            <button class="navbar-toggler">
-                <fa-icon [icon]="faBars"></fa-icon>
-            </button>
+            <div class="offcanvas-body">
+                <hr>
+                <div class="container text-center">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">Proyects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="vr d-none d-md-flex"></div>
+                <div class="container text-center">
+                    <ul class="navbar-nav gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">
+                                <fa-icon [icon]="faLinkedin"></fa-icon>
+                                <span class="ms-2">Linkedin</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" routerLink="/">
+                                <fa-icon [icon]="faGithub"></fa-icon>
+                                <span class="ms-2">GitHub</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
-</div>
+</header>
