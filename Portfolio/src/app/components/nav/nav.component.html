@@ -1,12 +1,10 @@
 <header class="navbar navbar-expand-lg bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
     <nav class="container-fluid bd-gutter" aria-label="Main navigation">
-        <div>
+        <div class="d-flex">
             <a routerLink="/">
                 <button class="btn-outline-light btn" type="button">Login</button>
             </a>
-        </div>
-        <div class="me-5 pe-5 d-none d-lg-flex">
-            <span class="text-white">#YoProgramo</span>
+            <span class="text-white nav nav-link d-none d-md-flex">#YoProgramo</span>
         </div>
         <button class="navbar-toggler d-flex d-lg-none" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-label="Toggle navigation" id="openbdNavbar">
@@ -27,7 +25,7 @@
                             <a class="nav-link active" routerLink="/">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/">Education</a>
+                            <a class="nav-link active" routerLink="/education">Education</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" routerLink="/">Proyects</a>
@@ -42,20 +40,20 @@
                 <div class="container text-center">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/">
+                            <a class="nav-link active" href="https://www.linkedin.com/in/enzo-bautista-862766189/">
                                 <fa-icon [icon]="faLinkedin"></fa-icon>
                                 <span class="ms-2">Linkedin</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/">
+                            <a class="nav-link active" href="https://github.com/0David1">
                                 <fa-icon [icon]="faGithub"></fa-icon>
                                 <span class="ms-2">GitHub</span>
                             </a>
                         </li>
                         <div class="vr d-none d-lg-flex"></div>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/">
+                            <a class="nav-link active" href="https://argentinaprograma.inti.gob.ar/">
                                 <img class="img-fluid" style="height: 20px;" src="../../../assets/imgs/Logo-arg.png">
                             </a>
                         </li>
