@@ -1,3 +1,56 @@
+main{
+    overflow: hidden;
+}
+
 ul{
     list-style: none;
+}
+
+.list-group-item{
+    border: none;
+}
+
+#l1, #l3{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+#l2{
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+#title{
+    animation-duration: 5s;
+    animation-name: spawn;
+}
+
+@keyframes slidein {
+    from {
+        translate: 100% 0;
+    }
+
+    to {
+        translate: 0 0;
+      }
+}
+
+@keyframes slidein2 {
+    from {
+        translate: -100% 0;
+    }
+
+    to {
+        translate: 0 0;
+      }
+}
+
+@keyframes spawn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

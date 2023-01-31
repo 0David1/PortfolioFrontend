@@ -1,27 +1,41 @@
+
 main{
     overflow: hidden;
 }
 
-h1,h5,span{
+#s1, #s3{
     animation-duration: 3s;
     animation-name: slidein;
 }
 
+#s2{
+    animation-duration: 3s;
+    animation-name: slidein2;
+}
+
+hr, h1, h5{
+    animation-duration: 6s;
+    animation-name: display;
+}
+
 @keyframes slidein {
     from {
-        margin-left: 100%;
-        width: 300%;
+        translate: 200% 0;
     }
 
     to {
-        margin-left: 0%;
-        width: 100%;
+        translate: 0 0;
       }
 }
 
-hr{
-    animation-duration: 8s;
-    animation-name: display;
+@keyframes slidein2 {
+    from {
+        translate: -200% 0;
+    }
+
+    to {
+        translate: 0 0;
+      }
 }
 
 @keyframes display {

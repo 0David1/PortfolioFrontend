@@ -4,6 +4,10 @@ html, body{
     height: 100%;
 }
 
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #background{
     background-image: url(assets/imgs/background.jpg);
     background-position: center;
