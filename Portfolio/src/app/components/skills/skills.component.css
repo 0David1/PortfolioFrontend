@@ -1,0 +1,38 @@
+main{
+    overflow: hidden;
+}
+
+h2{
+    animation-duration: 3s;
+    animation-name: display;
+}
+
+li{
+    animation-name: display;
+}
+
+#l1{
+    animation-duration: 2s;
+}
+
+#l2{
+    animation-duration: 3s;
+}
+
+#l3{
+    animation-duration: 4s;
+}
+
+#l4{
+    animation-duration: 5s;
+}
+
+@keyframes display {
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}

@@ -22,7 +22,7 @@ ul{
 
 #title{
     animation-duration: 5s;
-    animation-name: spawn;
+    animation-name: display;
 }
 
 @keyframes slidein {
@@ -45,7 +45,7 @@ ul{
       }
 }
 
-@keyframes spawn {
+@keyframes display {
     from {
         opacity: 0;
     }
