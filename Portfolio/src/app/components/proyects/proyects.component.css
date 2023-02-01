@@ -1,0 +1,8 @@
+main{
+    overflow: hidden;
+}
+
+.card{
+    border-width: 0.25rem;
+    border-color: rgb(43, 8, 43);
+}

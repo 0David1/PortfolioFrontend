@@ -7,11 +7,12 @@ h2{
     animation-name: display;
 }
 
-li{
+li, hr{
     animation-name: display;
+    opacity: 1;
 }
 
-#l1{
+#l1, hr{
     animation-duration: 2s;
 }
 
