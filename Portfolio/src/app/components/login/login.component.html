@@ -1,0 +1,55 @@
+<div class="d-flex align-items-center" id="background">
+    <main class="container-sm bg-secondary py-3" style="width:50rem;height:40rem;">
+        <div class="d-flex justify-content-center">
+            <h1 class="text-white">Login</h1>
+        </div>
+        <div>
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+
+                <div>
+    
+                    <input class="form-control" type="email" formControlName="email" name="email" placeholder="Email" [class.border-danger]="MailValid">
+    
+                </div>
+    
+                <div *ngIf="Mail?.errors  && Mail?.touched">    
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                        El formato del email debe ser válido.
+                    </p>
+                </div>
+    
+                <br/>
+    
+                <div>
+    
+                    <input class="form-control" type="password" formControlName="password" placeholder="Password" [class.border-danger]="PasswordValid">
+    
+                </div>
+    
+                <div *ngIf="Password?.errors && Password?.touched">
+    
+                    <p *ngIf="Password?.hasError('required')" class="error">El password es requerido.</p>
+    
+                    <p *ngIf="Password?.hasError('minlength')" class="error">El password debe tener al menos 8 caracteres.</p>
+    
+                    <p *ngIf="Password?.hasError('maxlength')" class="error">El password debe tener menos de 16 caracteres.</p>
+    
+                    <p *ngIf="Password?.hasError('pattern')" class="error">El password debe tener al menos una minuscula, una mayuscula y un numero.</p>
+    
+                </div>
+    
+                <br/>
+    
+                <div>
+    
+                    <button [disabled]="ButtonDisabled" class="form-control btn btn-primary" type="submit">Login</button>
+    
+                </div>
+    
+            </form>
+        </div>
+    </main>
+</div>
