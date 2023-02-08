@@ -1,0 +1,57 @@
+.error{
+    color:red;
+    margin: 0;
+  }
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    width: 30rem;
+    height: 22rem;
+    padding: 15px;
+}
+
+@media screen and (max-width:601px){
+    .login{
+    max-width: 80%;
+    height: 22rem;
+    }
+}
+
+.border-danger1{
+    border-width: medium;
+    animation-name: undisplay;
+    animation-duration: 5s;
+}
+
+#btn-login:focus{
+    color: #fff;
+    background-color: #0a58ca;
+}
+
+main{
+    animation-name: display;
+    animation-duration: 1s;
+}
+
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes undisplay{
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: #fff;
+
+    }
+}

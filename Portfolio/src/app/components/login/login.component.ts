@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,10 +7,10 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit{
-  form: FormGroup;
+  form: FormGroup
 
-  constructor(private formbuilder:FormBuilder){
-    this.form = this.formbuilder.group({
+  constructor(private FormBuilder: FormBuilder){
+    this.form = this.FormBuilder.group({
       email:['', [Validators.required,Validators.email]],
       password:['',[Validators.required,Validators.minLength(8),Validators.maxLength(16),
       Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[0-9a-zA-Z].{0,}')]]
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit{
   }
 
   get MailValid(){
-    return this.Mail?.touched && !this.Mail?.valid;
+    return this.Mail?.touched && !this.Mail?.valid && this.Mail?.pristine;
   }
 
   get Password(){
@@ -34,11 +34,7 @@ export class LoginComponent implements OnInit{
   }
 
   get PasswordValid(){
-    return this.Password?.touched && !this.Password?.valid;
-  }
-
-  get ButtonDisabled(){
-    return !this.Password?.valid || !this.Mail?.valid;
+    return this.Password?.touched && !this.Password?.valid && this.Password?.pristine;
   }
 
   onEnviar(event: Event){
@@ -48,6 +44,9 @@ export class LoginComponent implements OnInit{
       alert("all okay");
     }else{
       this.form.markAllAsTouched();
+      this.form.markAsPristine();
     }
   }
+
+
 }
