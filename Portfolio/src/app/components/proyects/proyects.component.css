@@ -1,8 +1,24 @@
 main{
     overflow: hidden;
+    animation-name:  display;
+    animation-duration: 2s;
+}
+
+a{
+    color: transparent;
 }
 
 .card{
     border-width: 0.25rem;
     border-color: rgb(43, 8, 43);
+}
+
+@keyframes display {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

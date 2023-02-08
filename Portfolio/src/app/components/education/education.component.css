@@ -11,17 +11,17 @@ ul{
 }
 
 #l1, #l3{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein;
 }
 
 #l2{
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-name: slidein2;
 }
 
 #title{
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-name: display;
 }
 

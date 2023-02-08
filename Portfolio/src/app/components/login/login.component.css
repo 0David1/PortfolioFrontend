@@ -23,7 +23,7 @@
 .border-danger1{
     border-width: medium;
     animation-name: undisplay;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 #btn-login:focus{
@@ -50,6 +50,7 @@ main{
     from {
         border-color: red;
     }
+
     to {
         border-color: #fff;
 
