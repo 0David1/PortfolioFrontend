@@ -11,7 +11,7 @@ import { AuthenticationService } from 'src/app/services/authentication.service';
 export class LoginComponent implements OnInit{
   form: FormGroup
 
-  constructor(private FormBuilder: FormBuilder, private authenticationService:AuthenticationService, private ruta:Router){
+  constructor(private FormBuilder: FormBuilder){
     this.form = this.FormBuilder.group({
       email:['', [Validators.required,Validators.email]]/*,
       password:['',[-Validators.required,Validators.minLength(8),Validators.maxLength(16),
@@ -41,10 +41,6 @@ export class LoginComponent implements OnInit{
 
   onEnviar(event: Event){
     event.preventDefault;
-    this.authenticationService.IniciarSesion(this.form.value).subscribe(data=>{
-      console.log("DATA:" + JSON.stringify(data));
-      this.ruta.navigate(['/portfolio']);
-    })
 
     if(this.form.valid){
       alert("all okay");
