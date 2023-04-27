@@ -1,9 +1,8 @@
 <header class="navbar navbar-expand-lg bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
     <nav class="container-fluid bd-gutter" aria-label="Main navigation">
         <div class="d-flex">
-            <a routerLink="login">
-                <button class="btn-outline-light btn" type="button">Login</button>
-            </a>
+                <button class="btn-outline-light btn" type="button" (click)="login()" *ngIf="!isLogged">Login</button>
+                <button class="btn-outline-light btn" type="button" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
             <span class="text-white nav nav-link d-none d-md-flex">#YoProgramo</span>
         </div>
         <button class="navbar-toggler d-flex d-lg-none" type="button" data-bs-toggle="offcanvas"
@@ -22,16 +21,20 @@
                 <div class="container text-center">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/" data-bs-dismiss="offcanvas" data-bs-target="#bdNavbar">About</a>
+                            <a class="nav-link active" routerLink="/" data-bs-dismiss="offcanvas"
+                                data-bs-target="#bdNavbar">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/education" data-bs-dismiss="offcanvas" data-bs-target="#bdNavbar">Education</a>
+                            <a class="nav-link active" routerLink="/education" data-bs-dismiss="offcanvas"
+                                data-bs-target="#bdNavbar">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/skills" data-bs-dismiss="offcanvas" data-bs-target="#bdNavbar">Skills</a>
+                            <a class="nav-link active" routerLink="/skills" data-bs-dismiss="offcanvas"
+                                data-bs-target="#bdNavbar">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" routerLink="/proyects" data-bs-dismiss="offcanvas" data-bs-target="#bdNavbar">Proyects</a>
+                            <a class="nav-link active" routerLink="/proyects" data-bs-dismiss="offcanvas"
+                                data-bs-target="#bdNavbar">Proyects</a>
                         </li>
                     </ul>
                 </div>

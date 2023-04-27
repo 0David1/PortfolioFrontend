@@ -12,6 +12,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
+import { interceptorProvider } from './services/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

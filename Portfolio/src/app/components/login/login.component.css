@@ -1,3 +1,7 @@
+#background{
+    height: 100%;
+}
+
 .error{
     color:red;
     margin: 0;
@@ -26,7 +30,7 @@
     animation-duration: 2s;
 }
 
-#btn-login:focus{
+.btn-login:focus{
     color: #fff;
     background-color: #0a58ca;
 }
