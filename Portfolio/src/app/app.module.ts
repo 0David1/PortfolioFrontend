@@ -7,22 +7,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './components/nav/nav.component';
 import { AboutComponent } from './components/about/about.component';
-import { EducationComponent } from './components/education/education.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './services/interceptor-service';
+import { NeweduComponent } from './components/educacion/newedu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     AboutComponent,
-    EducationComponent,
+    EducacionComponent,
     SkillsComponent,
     ProyectsComponent,
-    LoginComponent
+    LoginComponent,
+    NeweduComponent
   ],
   imports: [
     BrowserModule,

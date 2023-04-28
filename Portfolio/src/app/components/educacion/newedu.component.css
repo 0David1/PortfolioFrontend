@@ -1,0 +1,13 @@
+#background{
+    height: 100%;
+}
+
+.edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    width: 30rem;
+    height: auto;
+    padding: 15px;
+}
