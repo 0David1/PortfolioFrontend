@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center align-items-center" id="background">
+    <main class="bg-black bg-opacity-75 bg-gradient edu py-3">
+        <div class="container py-3" *ngIf="educacion">
+            <div class="row">
+                <div class="text-white">
+                    <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                        <div class="form-group">
+                            <label for="nombreE">Nombre de la institucion</label>
+                            <input type="text" class="form-control" id="nombreE" name="nombreE"
+                                [(ngModel)]="educacion.nombreE" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="descripcionE">Descripcion de sus estudios</label>
+                            <input type="text" class="form-control" id="descripcionE" name="descripcionE"
+                                [(ngModel)]="educacion.descripcionE" required>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary">
+                                Editar educacion
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

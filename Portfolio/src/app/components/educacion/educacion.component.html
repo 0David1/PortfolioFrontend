@@ -1,24 +1,27 @@
 <app-nav></app-nav>
-<div class="container-fluid" id="background">
+<div class="d-flex justify-content-center" id="background">
     <main class="h-100 text-center d-flex flex-column justify-content-center">
-        <div class="container-fluid text-white">
-            <h2 id="title">EDUCATION</h2>
-            <button type="button" class="btn-outline-light btn-primary btn" routerLink="/nuevaedu" *ngIf="isLogged">Add</button>
-            <div class="container">
+        <div class="container text-white p-0">
+            <h2 class="title">EDUCATION</h2>
+            <button type="button" class="btn-outline-light btn-primary btn mb-1" routerLink="/nuevaedu"
+                *ngIf="isLogged">Add</button>
+            <div class="container bg-secondary">
                 <table class="table">
                     <tbody>
-                        <tr *ngFor="let Educacion of educacion">
+                        <tr class="bg-secondary tbn bs_p" *ngFor="let Educacion of educacion">
                             <td>
                                 <h2>{{Educacion.nombreE}}</h2>
                             </td>
                             <td>{{Educacion.descripcionE}}</td>
                             <td *ngIf="isLogged">
                                 <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                                    <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                    <fa-icon [icon]="faPenToSquare"></fa-icon>
+                                </button>
                             </td>
                             <td *ngIf="isLogged">
                                 <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                                    <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                    <fa-icon [icon]="faTrash"></fa-icon>
+                                </button>
                             </td>
                         </tr>
                     </tbody>

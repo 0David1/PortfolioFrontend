@@ -14,6 +14,7 @@ import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { interceptorProvider } from './services/interceptor-service';
 import { NeweduComponent } from './components/educacion/newedu.component';
+import { EditeduComponent } from './components/educacion/editedu.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NeweduComponent } from './components/educacion/newedu.component';
     SkillsComponent,
     ProyectsComponent,
     LoginComponent,
-    NeweduComponent
+    NeweduComponent,
+    EditeduComponent
   ],
   imports: [
     BrowserModule,

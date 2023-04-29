@@ -1,12 +1,4 @@
-main{
-    overflow: hidden;
-}
-
-ul{
-    list-style: none;
-}
-
-.list-group-item{
+.tbn{
     border: none;
 }
 
@@ -14,47 +6,17 @@ ul{
     box-shadow: 0 1rem 2rem rgb(0 0 0 / 60%), inset 0 -1px 20px rgb(0 0 0 / 75%);
 }
 
-#l1, #l3{
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-
-#l2{
-    animation-duration: 2s;
-    animation-name: slidein2;
-}
-
-#title{
-    animation-duration: 3s;
+main{
+    animation-duration: 1.5s;
     animation-name: display;
 }
 
-@keyframes slidein {
-    from {
-        translate: 100% 0;
-    }
-
-    to {
-        translate: 0 0;
-      }
-}
-
-@keyframes slidein2 {
-    from {
-        translate: -100% 0;
-    }
-
-    to {
-        translate: 0 0;
-      }
-}
-
 @keyframes display {
-    from {
-        opacity: 0;
+    from{
+        opacity: 0%;
     }
 
-    to {
-        opacity: 1;
+    to{
+        opacity: 100%;
     }
 }

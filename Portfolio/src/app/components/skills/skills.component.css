@@ -1,32 +1,9 @@
 main{
     overflow: hidden;
-}
-
-h2{
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-name: display;
 }
 
-li, hr{
-    animation-name: display;
-    opacity: 1;
-}
-
-#l1, hr{
-    animation-duration: 2s;
-}
-
-#l2{
-    animation-duration: 3s;
-}
-
-#l3{
-    animation-duration: 4s;
-}
-
-#l4{
-    animation-duration: 5s;
-}
 
 @keyframes display {
     from{
@@ -37,3 +14,29 @@ li, hr{
         opacity: 100%;
     }
 }
+
+.skills {
+    padding: 20rem 1.5rem 20rem 1.5rem;
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .progress {
+    height: 30px;
+    border-radius: 0 10px 10px 0 !important;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .bg-color-purple {
+    background-color: rgb(76, 76, 173);
+  }
+  
+  .skill-name {
+    color: #fff !important;
+  }
