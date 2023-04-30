@@ -4,6 +4,10 @@ main{
     animation-name: display;
 }
 
+.btn{
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
 
 @keyframes display {
     from{
@@ -14,11 +18,6 @@ main{
         opacity: 100%;
     }
 }
-
-.skills {
-    padding: 20rem 1.5rem 20rem 1.5rem;
-    background-color: rgb(240, 240, 240);
-  }
   
   .progress {
     height: 30px;
