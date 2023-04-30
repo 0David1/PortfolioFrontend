@@ -1,41 +1,11 @@
+.container-p{
+    max-width: 50%;
+}
+
 main{
     overflow: hidden;
-}
-
-#s1, #s3{
-    animation-duration: 2s;
-    animation-name: slidein;
-}
-
-#s2{
-    animation-duration: 2s;
-    animation-name: slidein2;
-}
-
-hr, h1, h5{
-    opacity: 1;
     animation-duration: 4s;
     animation-name: display;
-}
-
-@keyframes slidein {
-    from {
-        translate: 200% 0;
-    }
-
-    to {
-        translate: 0 0;
-      }
-}
-
-@keyframes slidein2 {
-    from {
-        translate: -200% 0;
-    }
-
-    to {
-        translate: 0 0;
-      }
 }
 
 @keyframes display {
