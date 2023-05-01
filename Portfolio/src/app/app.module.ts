@@ -17,6 +17,10 @@ import { NeweduComponent } from './components/educacion/newedu.component';
 import { EditeduComponent } from './components/educacion/editedu.component';
 import { EditskiComponent } from './components/skills/editski.component';
 import { NewskiComponent } from './components/skills/newski.component';
+import { EditaboutComponent } from './components/about/editabout.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,8 @@ import { NewskiComponent } from './components/skills/newski.component';
     NeweduComponent,
     EditeduComponent,
     EditskiComponent,
-    NewskiComponent
+    NewskiComponent,
+    EditaboutComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { NewskiComponent } from './components/skills/newski.component';
     FontAwesomeModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [
     interceptorProvider
