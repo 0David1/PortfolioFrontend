@@ -1,19 +1,15 @@
-.bs_p{
-    box-shadow: 0 1rem 2rem rgb(0 0 0 / 60%), inset 0 -1px 20px rgb(0 0 0 / 75%);
+section{
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #191919;
 }
 
-main{
-    overflow: auto;
-    animation-duration: 1.5s;
-    animation-name: display;
+ul{
+    list-style: none;
 }
 
-@keyframes display {
-    from{
-        opacity: 0%;
-    }
-
-    to{
-        opacity: 100%;
-    }
+li{
+    background-color: #101010;
+    color: white;
+    box-shadow: inset 0 0 5px gray, 0 0 5px gray;
 }

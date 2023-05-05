@@ -1,12 +1,8 @@
-<app-nav></app-nav>
-<div class="container-fluid" id="background">
-    <main class="h-100 d-flex align-items-center justify-content-center text-white">
-        <div class="text-center" style="width: 32rem;">
-            <div>
-                <img src={{persona.img}} class="img-fluid" id="fotodeperfil">
-            </div>
-            <br>
-            <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+<section class="p-3 py-5 d-flex justify-content-center text-white">
+    <div class="d-flex flex-wrap align-content-center text-center">
+        <div class="ani">
+            <img src={{persona.img}} class="img-fluid" id="fotodeperfil">
+            <h1 class="pt-3">{{persona.nombre}} {{persona.apellido}}</h1>
             <hr>
             <div>
                 <div>
@@ -17,5 +13,5 @@
                 <fa-icon [icon]="faPenToSquare"></fa-icon>Editar
             </button>
         </div>
-    </main>
-</div>
+    </div>
+</section>

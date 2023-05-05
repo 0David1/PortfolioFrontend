@@ -2,10 +2,12 @@
     max-width: 50%;
 }
 
-main{
+section{
     overflow: hidden;
-    animation-duration: 4s;
-    animation-name: display;
+    min-height: 100vh;
+    max-width: 90%;
+    width: 32rem;
+    margin: auto;
 }
 
 @keyframes display {

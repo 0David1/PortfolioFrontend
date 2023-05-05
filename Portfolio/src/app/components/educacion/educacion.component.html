@@ -1,35 +1,28 @@
-<app-nav></app-nav>
-<div class="d-flex justify-content-center align-items-center" id="background">
-    <main class="bg-black bg-opacity-75 bg-gradient box py-3">
-        <div class="d-flex text-center text-white">
-            <div class="container-fluid">
-                <h2 class="mb-3">EDUCACION</h2>
-                <br>
-                <button type="button" class="btn-outline-light btn-primary btn mb-3" routerLink="/nuevaedu"
-                *ngIf="isLogged">Add</button>
-                <div class="container bg-secondary">
-                    <table class="table">
-                        <tbody>
-                            <tr class="bg-secondary border-0 bs_p" *ngFor="let Educacion of educacion">
-                                <td>
-                                    <h2>{{Educacion.nombreE}}</h2>
-                                </td>
-                                <td>{{Educacion.descripcionE}}</td>
-                                <td *ngIf="isLogged">
-                                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                                        <fa-icon [icon]="faPenToSquare"></fa-icon>
-                                    </button>
-                                </td>
-                                <td *ngIf="isLogged">
-                                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                                        <fa-icon [icon]="faTrash"></fa-icon>
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+<section class="p-3 py-5 d-flex justify-content-center">
+    <div class="d-flex flex-wrap align-content-center text-white">
+        <div class="text-center ani">
+            <h2>EDUCATION</h2>
+            <div>
+                <button type="button" routerLink="/newedu" class="btn-outline-light btn-primary btn mb-3"
+                    *ngIf="isLogged">Add</button>
+            </div>
+            <div *ngFor="let Educacion of educacion">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h3 class="m-0">{{Educacion.nombreE}}</h3>
+                    </li>
+                    <li class="list-group-item">{{Educacion.descripcionE}}</li>
+                    <br *ngIf="!isLogged">
+                </ul>
+                <div class="py-3" *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                        <fa-icon [icon]="faPenToSquare"></fa-icon>
+                    </button>
+                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                        <fa-icon [icon]="faTrash"></fa-icon>
+                    </button>
                 </div>
             </div>
         </div>
-    </main>
-</div>
+    </div>
+</section>

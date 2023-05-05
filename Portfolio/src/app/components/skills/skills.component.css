@@ -1,41 +1,33 @@
-main{
-    overflow: hidden;
-    animation-duration: 1.5s;
-    animation-name: display;
+section {
+  overflow: hidden;
+  min-height: 100vh;
+  max-width: 90%;
+  width: 40rem;
+  margin: auto;
 }
 
-.btn{
+.btn {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
 }
 
-@keyframes display {
-    from{
-        opacity: 0%;
-    }
-
-    to{
-        opacity: 100%;
-    }
+.progress {
+  border-radius: 0 10px 10px 0 !important;
+  min-height: 32px;
+  min-width: 7rem;
 }
-  
-  .progress {
-    height: 30px;
-    border-radius: 0 10px 10px 0 !important;
-  }
-  
-  .skill {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    border-radius: 10px 0 0 10px;
-  }
-  
-  .bg-color-purple {
-    background-color: rgb(76, 76, 173);
-  }
-  
-  .skill-name {
-    color: #fff !important;
-  }
+
+.skill {
+  min-width: 90%;
+}
+
+.skill-name {
+  border-radius: 10px 0 0 10px;
+  max-width: 20%;
+  max-height: 32px;
+  min-width: 4rem;
+}
+
+.bg-color-purple {
+  background-color: rgb(76, 76, 173);
+}

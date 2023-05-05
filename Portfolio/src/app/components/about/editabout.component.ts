@@ -10,7 +10,13 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./editabout.component.css']
 })
 export class EditaboutComponent {
-  persona: persona = new persona("","","","");
+  persona: persona = {
+    nombre:'',
+    apellido:'',
+    descripcion:'',
+    img:''
+  }
+  ;
 
   constructor(
     private activatedRouter: ActivatedRoute, 

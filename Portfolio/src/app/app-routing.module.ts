@@ -10,14 +10,15 @@ import { EditeduComponent } from './components/educacion/editedu.component';
 import { NewskiComponent } from './components/skills/newski.component';
 import { EditskiComponent } from './components/skills/editski.component';
 import { EditaboutComponent } from './components/about/editabout.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 const routes: Routes = [
-  {path:'', component: AboutComponent},
+  {path:'', component: PortfolioComponent},
   {path:'education', component: EducacionComponent},
   {path:'skills', component: SkillsComponent},
   {path:'proyects', component: ProyectsComponent},
   {path:'login', component: LoginComponent},
-  {path:'nuevaedu', component: NeweduComponent},
+  {path:'newedu', component: NeweduComponent},
   {path:'editedu/:id', component: EditeduComponent},
   {path:'newskill', component: NewskiComponent},
   {path:'editski/:id', component: EditskiComponent},

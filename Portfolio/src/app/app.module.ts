@@ -21,6 +21,7 @@ import { EditaboutComponent } from './components/about/editabout.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditeduComponent,
     EditskiComponent,
     NewskiComponent,
-    EditaboutComponent
+    EditaboutComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

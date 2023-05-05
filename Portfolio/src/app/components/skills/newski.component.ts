@@ -22,10 +22,10 @@ export class NewskiComponent implements OnInit {
     this.skillS.save(skill).subscribe(
       data => {
         alert("Skill creada correctamente");
-        this.router.navigate(['/skills']);
+        this.router.navigate(['']);
       }, err =>{
         alert("Fallo al añadir la skill");
-        this.router.navigate(['/skills']);
+        this.router.navigate(['']);
       }
     )
   }

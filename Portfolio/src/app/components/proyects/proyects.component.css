@@ -1,24 +1,20 @@
-main{
+section{
     overflow: hidden;
-    animation-name:  display;
-    animation-duration: 2s;
+    min-height: 100vh;
+    background-color: #191919;
 }
 
 a{
     color: transparent;
 }
 
+.proyect{
+    max-width: 100%;
+    width: 32rem;
+    margin: auto;
+}
+
 .card{
     border-width: 0.25rem;
     border-color: rgb(43, 8, 43);
-}
-
-@keyframes display {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
 }
