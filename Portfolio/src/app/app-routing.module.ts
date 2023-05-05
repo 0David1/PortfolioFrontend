@@ -1,9 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './components/about/about.component';
-import { EducacionComponent} from './components/educacion/educacion.component'
-import { SkillsComponent } from './components/skills/skills.component';
-import { ProyectsComponent } from './components/proyects/proyects.component';
 import { LoginComponent } from './components/login/login.component';
 import { NeweduComponent } from './components/educacion/newedu.component';
 import { EditeduComponent } from './components/educacion/editedu.component';
@@ -14,9 +10,6 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 
 const routes: Routes = [
   {path:'', component: PortfolioComponent},
-  {path:'education', component: EducacionComponent},
-  {path:'skills', component: SkillsComponent},
-  {path:'proyects', component: ProyectsComponent},
   {path:'login', component: LoginComponent},
   {path:'newedu', component: NeweduComponent},
   {path:'editedu/:id', component: EditeduComponent},
