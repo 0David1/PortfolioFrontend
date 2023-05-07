@@ -14,7 +14,7 @@
 
 }
 
-.nav-item:hover{
+.nav-item:hover, .active{
     border-radius: 15px;
     background-color: rgba(100, 18, 87, 0.5);
 }

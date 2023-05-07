@@ -9,12 +9,12 @@
             <div *ngFor="let Skill of skill">
                 <div class="d-flex flex-wrap mb-4">
                     <div class="d-flex flex-fill">
-                        <div class="skill-name bg-secondary">
+                        <div class="skill-name bg-dark">
                             <div class="p-1">{{Skill.nombre}}</div>
                         </div>
                         <div class="flex-fill">
                             <div class="progress">
-                                <div class="progress-bar p-1" role="progressbar"
+                                <div class="progress-bar progress-bar-striped progress-bar-animated p-1" role="progressbar"
                                     [ngStyle]="{'width.%': Skill.porcentaje}" aria-label="example" aria-valuemin="0"
                                     aria-valuemax="100">{{Skill.porcentaje}}%
                                 </div>

@@ -1,5 +1,5 @@
 <header class="navbar navbar-expand-lg bd-navbar sticky-top bg-body text-body" data-bs-theme="dark">
-    <nav class="container-fluid bd-gutter" aria-label="Main navigation">
+    <nav class="container-fluid bd-gutter" aria-label="Main navigation" id="nav1">
         <div class="d-flex">
             <button class="btn-outline-light btn" type="button" (click)="login()" *ngIf="!isLogged">Login</button>
             <button class="btn-outline-light btn" type="button" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
@@ -21,16 +21,16 @@
                 <div class="container text-center">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#about">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#educacion">Education</a>
+                            <a class="nav-link" href="#educacion">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#skills">Skills</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#proyects">Proyects</a>
+                            <a class="nav-link" href="#proyects">Proyects</a>
                         </li>
                     </ul>
                 </div>
@@ -39,20 +39,20 @@
                 <div class="container text-center">
                     <ul class="navbar-nav gap-3">
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://www.linkedin.com/in/enzo-bautista-862766189/">
+                            <a class="nav-link" href="https://www.linkedin.com/in/enzo-bautista-862766189/">
                                 <fa-icon [icon]="faLinkedin"></fa-icon>
                                 <span class="ms-2">Linkedin</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://github.com/0David1">
+                            <a class="nav-link" href="https://github.com/0David1">
                                 <fa-icon [icon]="faGithub"></fa-icon>
                                 <span class="ms-2">GitHub</span>
                             </a>
                         </li>
                         <div class="vr d-none d-lg-flex"></div>
                         <li class="nav-item">
-                            <a class="nav-link active" href="https://argentinaprograma.inti.gob.ar/">
+                            <a class="nav-link" href="https://argentinaprograma.inti.gob.ar/">
                                 <img class="img-fluid" style="height: 20px;" src="../../../assets/imgs/Logo-arg.png">
                             </a>
                         </li>

@@ -15,6 +15,7 @@ section {
   border-radius: 0 10px 10px 0 !important;
   min-height: 32px;
   min-width: 7rem;
+  background-color: rgb(175, 175, 175);
 }
 
 .skill {
@@ -26,4 +27,8 @@ section {
   max-width: 20%;
   max-height: 32px;
   min-width: 4rem;
+}
+
+.progress-bar{
+  background-color: rgba(100, 18, 87, 1);
 }
