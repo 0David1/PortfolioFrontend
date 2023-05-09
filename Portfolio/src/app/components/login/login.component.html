@@ -1,33 +1,22 @@
-<div class="d-flex justify-content-center align-items-center bg">
-    <section class="bg-black bg-opacity-75 bg-gradient box py-3">
-        <div class="d-flex justify-content-center">
-            <h1 class="text-white">Login</h1>
+<section class="d-flex justify-content-center align-items-center bg">
+    <div class="bg-black bg-opacity-75 bg-gradient ski py-3 login">
+        <div class="container py-3 ani">
+            <h1 class="text-white text-center">Login</h1>
         </div>
         <br>
         <div>
             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 
                 <div>
-                    <input 
-                        type="email" 
-                        id="nombreUsuario" 
-                        name="nombreUsuario" 
-                        class="form-control" 
-                        [(ngModel)]="nombreUsuario" 
-                        [ngModelOptions]="{standalone: true}" 
-                        required />
+                    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control"
+                        [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}" required />
                 </div>
 
                 <br />
 
                 <div>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        class="form-control" 
-                        [(ngModel)]="password" 
-                        [ngModelOptions]="{standalone: true}" 
-                        required />
+                    <input type="password" id="password" class="form-control" [(ngModel)]="password"
+                        [ngModelOptions]="{standalone: true}" required />
                 </div>
 
                 <br />
@@ -40,5 +29,5 @@
 
             </form>
         </div>
-    </section>
-</div>
+    </div>
+</section>
