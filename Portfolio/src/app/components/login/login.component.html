@@ -8,14 +8,14 @@
             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
 
                 <div>
-                    <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control"
+                    <input type="email" id="nombreUsuario" name="nombreUsuario" placeholder="username" class="form-control"
                         [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}" required />
                 </div>
 
                 <br />
 
                 <div>
-                    <input type="password" id="password" class="form-control" [(ngModel)]="password"
+                    <input type="password" id="password" placeholder="password" class="form-control" [(ngModel)]="password"
                         [ngModelOptions]="{standalone: true}" required />
                 </div>
 
