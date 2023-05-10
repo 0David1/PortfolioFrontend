@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTrash,faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/services/educacion.service';
 import { TokenService } from 'src/app/services/token.service';

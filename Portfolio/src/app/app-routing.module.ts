@@ -7,6 +7,8 @@ import { NewskiComponent } from './components/skills/newski.component';
 import { EditskiComponent } from './components/skills/editski.component';
 import { EditaboutComponent } from './components/about/editabout.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { EditexpComponent } from './components/experience/editexp.component';
+import { NewexpComponent } from './components/experience/newexp.component';
 
 const routes: Routes = [
   {path:'', component: PortfolioComponent},
@@ -15,7 +17,9 @@ const routes: Routes = [
   {path:'editedu/:id', component: EditeduComponent},
   {path:'newskill', component: NewskiComponent},
   {path:'editski/:id', component: EditskiComponent},
-  {path:'editabout/:id', component: EditaboutComponent}
+  {path:'editabout/:id', component: EditaboutComponent},
+  {path:'editexp/:id', component: EditexpComponent},
+  {path:'newexp', component: NewexpComponent}
 ];
 
 @NgModule({

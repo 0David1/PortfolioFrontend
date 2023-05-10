@@ -1,8 +1,10 @@
-section{
+section {
     overflow: hidden;
     min-height: 100vh;
-    background-color: #191919;
-}
+    max-width: 90%;
+    width: 40rem;
+    margin: auto;
+  }
 
 a{
     color: transparent;

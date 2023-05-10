@@ -29,5 +29,4 @@ export class NeweduComponent implements OnInit {
       }
     )
   }
-
 }

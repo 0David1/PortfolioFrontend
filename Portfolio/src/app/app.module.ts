@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -22,6 +23,9 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EditexpComponent } from './components/experience/editexp.component';
+import { NewexpComponent } from './components/experience/newexp.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +41,14 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
     EditskiComponent,
     NewskiComponent,
     EditaboutComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ExperienceComponent,
+    EditexpComponent,
+    NewexpComponent
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,

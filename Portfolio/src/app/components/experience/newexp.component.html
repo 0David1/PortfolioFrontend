@@ -1,0 +1,29 @@
+<div class="d-flex justify-content-center align-items-center bg">
+    <main class="bg-black bg-opacity-75 bg-gradient edu py-3">
+        <div class="text-white ani">
+            <div class="row">
+                <div>
+                    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                        <div class="form-group">
+                            <label for="nombreEx">Nombre de la empresa</label>
+                            <input type="text" class="form-control " id="nombreEx" name="nombreEx" [(ngModel)]="nombreEx"
+                                required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="descripcionEx">Descripcion del cargo</label>
+                            <input type="text" class="form-control" id="descripcionEx" name="descripcionEx"
+                                [(ngModel)]="descripcionEx" required>
+                        </div>
+                        <br>
+                        <div class="d-flex justify-content-center">
+                            <button class="btn btn-primary">
+                                Agregar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
