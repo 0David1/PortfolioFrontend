@@ -6,21 +6,23 @@
                 <button type="button" routerLink="/newedu" class="btn-outline-light btn-primary btn mb-3"
                     *ngIf="isLogged">Add</button>
             </div>
-            <div *ngFor="let Educacion of educacion">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h3 class="m-0">{{Educacion.nombreE}}</h3>
-                    </li>
-                    <li class="list-group-item">{{Educacion.descripcionE}}</li>
-                    <br *ngIf="!isLogged">
-                </ul>
-                <div class="py-3" *ngIf="isLogged">
-                    <button class="btn btn-light m-1" routerLink="/editedu/{{Educacion.id}}">
-                        <fa-icon [icon]="faPenToSquare"></fa-icon>
-                    </button>
-                    <button class="btn btn-danger m-1" (click)="delete(Educacion.id)">
-                        <fa-icon [icon]="faTrash"></fa-icon>
-                    </button>
+            <div cdkDropList (cdkDropListDropped)="onDrop($event)">
+                <div *ngFor="let Educacion of educacion">
+                    <ul class="list-group text-center" [ngClass]="{ 'cursor-move': isLogged}" [cdkDragDisabled]="!isLogged" cdkDrag>
+                        <li class="list-group-item">
+                            <h3 class="m-0">{{Educacion.nombreE}}</h3>
+                        </li>
+                        <li class="list-group-item">{{Educacion.descripcionE}}</li>
+                        <br *ngIf="!isLogged">
+                    </ul>
+                    <div class="py-3" *ngIf="isLogged">
+                        <button class="btn btn-light m-1" routerLink="/editedu/{{Educacion.id}}">
+                            <fa-icon [icon]="faPenToSquare"></fa-icon>
+                        </button>
+                        <button class="btn btn-danger m-1" (click)="delete(Educacion.id)">
+                            <fa-icon [icon]="faTrash"></fa-icon>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

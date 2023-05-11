@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { Experiencia } from 'src/app/model/experiencia';
@@ -45,5 +46,9 @@ export class ExperienceComponent {
         }
       )
     }
+  }
+
+  onDrop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.experiencia, event.previousIndex, event.currentIndex);
   }
 }

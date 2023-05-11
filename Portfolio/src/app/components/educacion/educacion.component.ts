@@ -1,3 +1,4 @@
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, OnInit } from '@angular/core';
 import { faTrash,faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { Educacion } from 'src/app/model/educacion';
@@ -45,5 +46,9 @@ export class EducacionComponent implements OnInit {
         }
       )
     }
+  }
+
+  onDrop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.educacion, event.previousIndex, event.currentIndex);
   }
 }

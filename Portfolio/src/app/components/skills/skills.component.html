@@ -6,11 +6,11 @@
                 <button type="button" routerLink="/newskill" class="btn-outline-light btn-primary btn"
                     *ngIf="isLogged">Add</button>
             </div>
-            <div *ngFor="let Skill of skill">
-                <div class="d-flex flex-wrap mb-4">
-                    <div class="d-flex flex-fill my-1">
+            <div cdkDropList (cdkDropListDropped)="onDrop($event)">
+                <div class="d-flex flex-wrap mb-4" *ngFor="let Skill of skill">
+                    <div class="d-flex flex-fill my-1" [ngClass]="{ 'cursor-move': isLogged}" [cdkDragDisabled]="!isLogged" cdkDrag>
                         <div class="skill-name bg-dark">
-                            <div class="p-1">{{Skill.nombre}}</div>
+                            <div class="text-white p-1">{{Skill.nombre}}</div>
                         </div>
                         <div class="flex-fill">
                             <div class="progress">
