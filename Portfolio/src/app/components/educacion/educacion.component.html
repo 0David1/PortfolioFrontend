@@ -15,10 +15,10 @@
                     <br *ngIf="!isLogged">
                 </ul>
                 <div class="py-3" *ngIf="isLogged">
-                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                    <button class="btn btn-light m-1" routerLink="/editedu/{{Educacion.id}}">
                         <fa-icon [icon]="faPenToSquare"></fa-icon>
                     </button>
-                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                    <button class="btn btn-danger m-1" (click)="delete(Educacion.id)">
                         <fa-icon [icon]="faTrash"></fa-icon>
                     </button>
                 </div>
