@@ -32,7 +32,3 @@ section {
 .progress-bar{
   background-color: rgba(100, 18, 87, 1);
 }
-
-.cursor-move{
-  cursor: move;
-}

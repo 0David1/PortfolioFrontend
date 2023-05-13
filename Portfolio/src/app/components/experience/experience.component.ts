@@ -1,6 +1,8 @@
-import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, CdkDropList, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { faPenToSquare, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { forkJoin } from 'rxjs';
 import { Experiencia } from 'src/app/model/experiencia';
 import { ExperienciaService } from 'src/app/services/experiencia.service';
 import { TokenService } from 'src/app/services/token.service';
@@ -16,7 +18,7 @@ export class ExperienceComponent {
   faTrash = faTrash;
   faPenToSquare = faPenToSquare;
   
-  constructor(private experienciaS: ExperienciaService, private tokenService: TokenService) { }
+  constructor(private activatedRouter : ActivatedRoute, private experienciaS: ExperienciaService, private tokenService: TokenService) { }
   isLogged = false;
 
   ngOnInit(): void {
@@ -51,4 +53,28 @@ export class ExperienceComponent {
   onDrop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.experiencia, event.previousIndex, event.currentIndex);
   }
+
+  /*onDragEnded(experiencia: Experiencia): void {
+    const index = this.experiencia.indexOf(experiencia);
+    experiencia.id = index;
+    console.log(index);
+    this.saveChanges();
+  }
+  
+  saveChanges(): void {
+    const observables = this.experiencia.map(experiencia => {
+      return this.experienciaS.update(experiencia.id!, experiencia);
+    });
+  
+    forkJoin(observables).subscribe(
+      () => {
+        console.log('Cambios guardados en el backend');
+      },
+      error => {
+        console.error('Error al guardar cambios en el backend:', error);
+      }
+    );
+  
+    console.log('funciona');
+  }*/
 }

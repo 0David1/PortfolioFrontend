@@ -8,7 +8,7 @@
             </div>
             <div cdkDropList (cdkDropListDropped)="onDrop($event)">
                 <div *ngFor="let Experiencia of experiencia">
-                    <ul class="list-group text-center" [ngClass]="{ 'cursor-move': isLogged}" [cdkDragDisabled]="!isLogged" cdkDrag>
+                    <ul class="list-group text-center" [ngClass]="{ 'cursor-move': isLogged}" [cdkDragDisabled]="!isLogged" cdkDrag><!--(cdkDragEnded)="onDragEnded(Experiencia)"-->
                         <li class="list-group-item">
                             <h3 class="m-0">{{Experiencia.nombreEx}}</h3>
                         </li>

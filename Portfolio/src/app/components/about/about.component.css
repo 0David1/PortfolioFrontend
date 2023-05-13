@@ -2,12 +2,24 @@
     max-width: 50%;
 }
 
-section{
-    overflow: hidden;
-    min-height: 100vh;
+#fotodeperfil{
+    width: 200px;
+    max-width: 70%;
+    border-radius: 50%;
+}
+
+#banner{
+    background-image: url(../../../assets/imgs/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh;
+}
+
+.info{
     max-width: 90%;
+    min-height: 80vh;
     width: 32rem;
-    margin: auto;
 }
 
 @keyframes display {

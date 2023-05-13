@@ -1,17 +1,22 @@
-<section class="p-3 py-5 d-flex justify-content-center text-white" id="about">
-    <div class="d-flex flex-wrap align-content-center text-center">
-        <div class="ani">
-            <img src={{persona.img}} class="img-fluid" id="fotodeperfil">
-            <h1 class="pt-3">{{persona.nombre}} {{persona.apellido}}</h1>
-            <hr>
-            <div>
+<section id="about">
+    <div class="d-flex flex-wrap justify-content-center align-content-center ani" id="banner">
+        <h2 class="text-white">My Portfolio</h2>
+    </div>
+    <div class="p-3 py-5 d-flex justify-content-center text-white info mx-auto">
+        <div class="d-flex flex-wrap align-content-center text-center">
+            <div class="ani">
+                <img src={{persona.img}} class="img-fluid" id="fotodeperfil">
+                <h1 class="pt-3">{{persona.nombre}} {{persona.apellido}}</h1>
+                <hr>
                 <div>
-                    <p>{{persona.descripcion}}</p>
+                    <div>
+                        <p>{{persona.descripcion}}</p>
+                    </div>
                 </div>
+                <button class="btn btn-light" routerLink="/editabout/{{persona.id}}" *ngIf="isLogged">
+                    <fa-icon [icon]="faPenToSquare"></fa-icon>Editar
+                </button>
             </div>
-            <button class="btn btn-light" routerLink="/editabout/{{persona.id}}" *ngIf="isLogged">
-                <fa-icon [icon]="faPenToSquare"></fa-icon>Editar
-            </button>
         </div>
     </div>
 </section>
